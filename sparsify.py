@@ -8,7 +8,7 @@ def _find_lower_index(index: int, indices_to_keep: np.ndarray) -> int:
       return j
 
 def sparsify(x_data: np.ndarray, y_data: np.ndarray, y_tol: float) -> tuple[np.ndarray, np.ndarray]:
-  """Sparsify the input data so that it is well approximated by a 1D interpolation of the output data
+  """Sparsify the input data so that it is well approximated by a linear interpolation of the output data
 
   Args:
     x_data: The dense input x-coordinates
